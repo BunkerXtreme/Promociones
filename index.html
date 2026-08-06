@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bunker Xtreme Gym - Conoce nuestras sedes Tingo María y Nicolás Dueñas en Lima. Revisa nuestras promociones, membresías y horarios.">
+    <title>Bunker Xtreme - Sedes, Membresías y Horarios</title>
+    
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ga+Maamli&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="locations.css">
+    
+    <!-- Scripts -->
+    <script src="locations.js" defer></script>
+</head>
+<body>
+    <main class="split-container">
+        <!-- Sede Izquierda: Tingo María -->
+        <div class="split-option left">
+            <section class="content">
+                <h2>Sede<br><span class="texto-destacado anton-regular">Tingo María</span></h2>
+                <p>Nos ubicamos en:</p>
+                <a href="https://maps.app.goo.gl/V2J4VCvbR1DuZ7Uq5" target="_blank" rel="noopener noreferrer" aria-label="Ubicación de Sede Tingo María en Google Maps">
+                    <i class="fa-solid fa-location-dot location-icon"></i>Av. Tingo María 1392, Lima
+                </a>
+                <br><br>
+                <button type="button" class="btn-promociones open-modal-btn" data-modal="promoModal-1" aria-controls="promoModal-1">
+                    <span class="icon">✨</span>
+                    <span class="text">Promociones</span>
+                    <span class="badge">¡OFERTA!</span>
+                </button>
+                <br><br>
+                <a href="https://wa.me/51973044266?text=Deseo%20inscribirme%20%F0%9F%90%9C" target="_blank" rel="noopener noreferrer" aria-label="Inscríbete por WhatsApp Sede Tingo María">
+                    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>¡Inscríbete aquí!👈🏻
+                </a>
+            </section>
+        </div>
+
+        <!-- Sede Derecha: Nicolás Dueñas -->
+        <div class="split-option right">
+            <section class="content">
+                <h2>Sede<br><span class="texto-destacado anton-regular">Nicolás Dueñas</span></h2>
+                <p>Nos ubicamos en:</p>
+                <a href="https://maps.app.goo.gl/V2J4VCvbR1DuZ7Uq5" target="_blank" rel="noopener noreferrer" aria-label="Ubicación de Sede Nicolás Dueñas en Google Maps">
+                    <i class="fa-solid fa-location-dot location-icon"></i>Av. Nicolás Dueñas 212, Lima
+                </a>
+                <br><br>
+                <button type="button" class="btn-promociones open-modal-btn" data-modal="promoModal-2" aria-controls="promoModal-2">
+                    <span class="icon">✨</span>
+                    <span class="text">Promociones</span>
+                    <span class="badge">¡OFERTA!</span>
+                </button>
+                <br><br>
+                <a href="https://wa.me/51902880278?text=Deseo%20inscribirme%20%F0%9F%90%9C" target="_blank" rel="noopener noreferrer" aria-label="Inscríbete por WhatsApp Sede Nicolás Dueñas">
+                    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>¡Inscríbete aquí!👈🏻
+                </a>
+            </section>
+        </div>
+
+        <!-- Logo Central -->
+        <div class="central-logo">
+            <img src="img/bkx-logo.png" alt="Logo de Bunker Xtreme" width="300" height="259">
+        </div>
+    </main>
+
+    <!-- Modal Tingo María -->
+    <div class="modal-overlay" id="promoModal-1" aria-hidden="true" role="dialog" aria-labelledby="modal-title-1">
+        <div class="modal-container">
+            <button type="button" class="modal-close close-modal-btn" aria-label="Cerrar modal">&times;</button>
+            <h2 class="modal-title" id="modal-title-1">Planes y Horarios - Sede Tingo María</h2>
+            <div class="modal-gallery">
+                <img src="img/membresias-tm.jpg" alt="Membresías Sede Tingo María" class="modal-img" loading="lazy">
+                <img src="img/horarios-tm.jpg" alt="Horarios Sede Tingo María" class="modal-img" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Nicolás Dueñas -->
+    <div class="modal-overlay" id="promoModal-2" aria-hidden="true" role="dialog" aria-labelledby="modal-title-2">
+        <div class="modal-container">
+            <button type="button" class="modal-close close-modal-btn" aria-label="Cerrar modal">&times;</button>
+            <h2 class="modal-title" id="modal-title-2">Planes y Horarios - Sede Nicolás Dueñas</h2>
+            <div class="modal-gallery">
+                <img src="img/membresias-nd.jpg" alt="Membresías Sede Nicolás Dueñas" class="modal-img" loading="lazy">
+                <img src="img/horario-nd.jpg" alt="Horarios Sede Nicolás Dueñas" class="modal-img" loading="lazy">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
